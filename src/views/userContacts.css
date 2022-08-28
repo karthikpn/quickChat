@@ -1,7 +1,29 @@
 .userContacts {
   width: 20%;
   height: 100%;
-  margin: 0% 1%;
+}
+
+.taskbar {
+  width: 100%;
+  position: absolute;
+  z-index: 30;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.userContacts__task {
+  width: 30%;
+  padding-left: 2vw;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: white;
+}
+.userContacts_mobile {
+  display: none;
 }
 .avatar {
   vertical-align: middle;
@@ -16,6 +38,7 @@
 }
 .userContacts__brand__name {
   display: inline-block;
+  font-size: "1rem";
 }
 .userContacts_user {
   height: fit-content;
@@ -42,7 +65,7 @@
   width: 80%;
   align-items: center;
   margin: 1vh 0;
-  padding: 2vh 0;
+  padding: 1.5vh 0;
 }
 
 .switch {
@@ -138,4 +161,20 @@ input:checked + .slider:before {
 }
 .showmenu__menu > * {
   font-size: 0.9rem;
+}
+@media only screen and (max-width: 900px) {
+  .userContacts {
+    display: none;
+  }
+
+  .userprofile {
+    width: 30%;
+  }
+  .chat {
+    width: 60%;
+  }
+  .userContacts_mobile {
+    display: inline-block;
+    margin-top: 3vh;
+  }
 }

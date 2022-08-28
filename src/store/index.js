@@ -6,6 +6,7 @@ const initialState = {
   email: "",
   showConvo: false,
   chat: [],
+  showTaskbar: false,
 };
 
 const reducer = (state = initialState, action) => {

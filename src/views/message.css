@@ -8,13 +8,13 @@
 .sent {
   flex-direction: row-reverse;
 }
-.sent > .message {
+.sent > .m > .message {
   background-color: #1a233c;
   color: white;
   margin-left: auto;
 }
 
-.receive > .message {
+.receive > .m > .message {
   background-color: white;
   color: #1a233c;
   margin-right: auto;
@@ -25,4 +25,18 @@
   display: flex;
   border-radius: 12px;
   align-items: center;
+}
+.m {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: -2vh;
+}
+.receive > .m > p {
+  margin-right: auto;
+  margin-left: 1vw;
+}
+.sent > .m > p {
+  margin-right: 1vw;
+  margin-left: auto;
 }

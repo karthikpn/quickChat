@@ -12,8 +12,13 @@ const Message = ({ message }) => {
           width: "30px",
         }}
       />
-      <div className={`message`}>
-        <p style={{ fontSize: "0.75rem" }}>{message.message}</p>
+      <div className="m">
+        <div className={`message`}>
+          <p style={{ fontSize: "0.75rem" }}>{message.message}</p>
+        </div>
+        <p style={{ fontSize: "0.65rem", marginTop: "-0.5vh", color: "gray" }}>
+          9h
+        </p>
       </div>
     </div>
   );

@@ -42,6 +42,7 @@ const Chat = () => {
           onClick={showConvo}
           className="chat__input__send"
           disabled={esend}
+          style={esend ? { cursor: "not-allowed" } : { cursor: "pointer" }}
         >
           Send <RiSendPlane2Fill />
         </button>
