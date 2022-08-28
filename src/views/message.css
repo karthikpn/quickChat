@@ -1,0 +1,28 @@
+.message {
+  width: fit-content;
+  padding: 1.5vh 1vw;
+  display: flex;
+  border-radius: 12px;
+  margin: 2vh 1vw;
+}
+.sent {
+  flex-direction: row-reverse;
+}
+.sent > .message {
+  background-color: #1a233c;
+  color: white;
+  margin-left: auto;
+}
+
+.receive > .message {
+  background-color: white;
+  color: #1a233c;
+  margin-right: auto;
+}
+.messages {
+  width: 100%;
+  padding: 1.5vh 1vw;
+  display: flex;
+  border-radius: 12px;
+  align-items: center;
+}
